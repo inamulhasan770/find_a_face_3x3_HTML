@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Question 1: Eloquence 2k19
+</title>
+
+<style>
+
+div.darea {
+width: 1300px;
+height: 600px;
+margin-top: 100px;
+border: 4px solid blue;
+box-shadow: 5px 5px 5px grey;
+}
+
+.quest {
+  display: inline-block;
+width: 500px;
+height: 500px;
+margin-left: 50px;
+float: left;
+}
+
+.ans {
+  display: inline-block;
+width: 400px;
+height: 400px;
+margin-left: 10px;
+float: right;
+margin-right: 50px;
+margin-top: 30px;
+background-color: yellow;
+border: 3px solid black;
+}
+
+.counter {
+float: right;
+position: relative;
+margin-top: 30px;
+}
+</style>
+
+<script>
+count = 0;
+function changeimg(imag, pid){
+var c = "images/test/"+imag;
+count += 1;
+if(count > 4) {
+alert("Oops!! You have opened 4 Blocks");
+}
+else {
+document.getElementById(pid).src=(c)
+counter.innerHTML = count;
+}
+}
+
+function showans() {
+answer.src = "images/test/ans.jpg";
+}
+
+</script>
+
+
+</head>
+<body>
+<div class="counter"><h3>Count : </h3><p id = "counter"></p></div>
+<center>
+<div class="darea">
+<div class = "quest">
+<h2> Question : 1 </h2>
+<table cellspacing="2px">
+<tr>
+<td><div><img src = "def/1.jpg" id="11" onclick = "changeimg('1.jpg','11')" height="120px" width="120px"/></div></td>
+<td><div><img src = "def/2.jpg" id="12" onclick = "changeimg('2.jpg','12')" height="120px" width="120px"/></div></td>
+<td><div><img src = "def/3.jpg" id="13" onclick = "changeimg('3.jpg','13')" height="120px" width="120px"/></div></td>
+</tr>
+
+<tr>
+<td><div><img src = "def/4.jpg" id="21" onclick = "changeimg('4.jpg','21')" height="120px" width="120px"/></div></td>
+<td><div><img src = "def/5.jpg" id="22" onclick = "changeimg('5.jpg','22')" height="120px" width="120px"/></div></td>
+<td><div><img src = "def/6.jpg" id="23" onclick = "changeimg('6.jpg','23')" height="120px" width="120px"/></div></td>
+</tr>
+
+<tr>
+<td><div><img src = "def/7.jpg" id="31" onclick = "changeimg('7.jpg','31')" height="120px" width="120px"/></div></td>
+<td><div><img src = "def/8.jpg" id="32" onclick = "changeimg('8.jpg','32')" height="120px" width="120px"/></div></td>
+<td><div><img src = "def/9.jpg" id="33" onclick = "changeimg('9.jpg','33')" height="120px" width="120px"/></div></td>
+</tr>
+
+
+</table>
+</div>
+<br/>
+<div class = "ans">
+<h2>Answer : </h2>
+<center>
+<img src = "def/def.jpg" height: "450px" width: "450px" id = "answer"/></center>
+</div>
+<br/>
+
+
+
+</div>
+</center>
+<br/>
+<br/>
+<div class="panel">
+<center>
+<form> 
+<input type="submit" value="next" onsubmit="2.html"/> &nbsp; &nbsp;
+<input type="button" value="Show Answer" onclick="showans()"/>  
+</form>
+</center>
+</div>
+</body>
+</html>
+
+
+
+
+
